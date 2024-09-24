@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Job application form</title>
+<script src="scripts/form_validation.js"></script>
+</head>
+<body>
+    <form action="https://formsreceiver.codesamples.dk/" method="post" enctype="multipart/form-data" name="applicationform">
+        <table>
+            <tr><td>Name</td><td><input type="text" name="name" id="name" maxlength="50" /></td></tr>
+            <tr><td>Email</td><td><input type="email" name="email" id="email" /></td></tr>
+            <tr><td>Password</td><td><input type="password" name="password" id="password" maxlength="25" /></td></tr>
+            <tr>
+                <td>Job areas of interest</td>
+                <td>
+                    <i>Check all that apply:</i>
+                    <br /><input type="checkbox" name="field_of_interest" id="field_of_interest_coding" value="coding"> <label for="field_of_interest_coding">Coding</label>
+                    <br /><input type="checkbox" name="field_of_interest" id="field_of_interest_testing" value="testing"> <label for="field_of_interest_testing">Testing</label>
+                    <br /><input type="checkbox" name="field_of_interest" id="field_of_interest_debugging" value="debugging"> <label for="field_of_interest_debugging">Debugging</label>
+                    <br /><input type="checkbox" name="field_of_interest" value="project_management" id="field_of_interest_project_management"> <label for="field_of_interest_project_management">Project Management</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Flexibility in work hours</td>
+                <td>
+                    <br /><input type="radio" name="work_hours" id="work_hours_regular" value="default" checked="checked"> <label for="work_hours_regular">Regular work week</label>
+                    <br /><input type="radio" name="work_hours" id="work_hours_flexible" value="flexible"> <label for="work_hours_flexible">Some flexibility</label>
+                    <br /><input type="radio" name="work_hours" id="work_hours_anything" value="anything"> <label for="work_hours_anything">24/7</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Desired office location</td>
+                <td>
+                    <select name="location">
+                        <optgroup label="Great Britain"><option value="Cardiff">Cardiff</option><option value="London">London</option></optgroup>
+
+                        <optgroup label="Mainland Europe"><option value="Budapest">Budapest</option><option value="Madrid">Madrid</option><option value="Sofia">Sofia</option><option value="Prague">Prague</option><option value="Oslo">Oslo</option><option value="Copenhagen">Copenhagen</option><option value="Aalborg" selected="selected">Aalborg</option><option value="Malmoe">Malmö</option></optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Short application (250 chars max.)</td><td><textarea name="application" id="application" rows="8" cols="30" maxlength="250"></textarea></td></tr>
+            <tr><td>Picture</td><td><input type="file" name="picture" accept=".jpg,.png" /></td></tr>
+            <tr><td colspan="2"><div id="errors" style="width:100%; height:100%;background-color:yellow; color:red;"></div></td></tr>
+            <tr><td colspan="2"><input type="submit" value="submit form" onclick="return validateForm();" /></td></tr>
+        </table>
+    </form>
+</body>
+</html>

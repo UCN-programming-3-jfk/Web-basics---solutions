@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Job application form</title>
+<script></script>
+</head>
+<body>
+    <form action="https://formsreceiver.codesamples.dk/" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal info</legend>
+            <p><label for="name">Name</label> <input type="text" name="name" maxlength="50" /></p>
+            <p>            <label for="email">Email</label> <input type="email" name="email" /></p>
+            Password <input type="password" name="password" maxlength="25" />
+        </fieldset>
+        <fieldset>
+            <legend>Work wishes</legend>
+            Job areas of interest
+
+            <br /><i>Check all that apply:</i>
+            <br /><input type="checkbox" name="field_of_interest" value="coding"> <label for="coding">Coding</label>
+            <br /><input type="checkbox" name="field_of_interest" value="testing"> <label for="testing">Testing</label>
+            <br /><input type="checkbox" name="field_of_interest" value="debugging"> <label for="debugging">Debugging</label>
+            <br /><input type="checkbox" name="field_of_interest" value="project_management"> <label for="project_management">Project Management</label>
+
+            <p>Flexibility in work hours
+            <br /><input type="radio" name="work_hours" value="default" checked="checked"> <label for="default">Regular work week</label>
+            <br /><input type="radio" name="work_hours" value="flexible"> <label for="flexible">Some flexibility</label>
+            <br /><input type="radio" name="work_hours" value="anything"> <label for="anything">24/7</label></p>
+
+
+            Desired office location 
+            <br /><select name="location">
+                <optgroup label="Great Britain"><option value="Cardiff">Cardiff</option><option value="London">London</option></optgroup>
+
+                <optgroup label="Mainland Europe"><option value="Budapest">Budapest</option><option value="Madrid">Madrid</option><option value="Sofia">Sofia</option><option value="Prague">Prague</option><option value="Oslo">Oslo</option><option value="Copenhagen">Copenhagen</option><option value="Aalborg" selected="selected">Aalborg</option><option value="Malmoe">Malmö</option></optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Application and picture</legend>
+            Short application (250 chars max.)
+            <br /><textarea name="application" rows="8" cols="30" maxlength="250"></textarea>
+                                              <p>Picture<input type="file" name="picture" accept=".jpg,.png" /></p>
+            </fieldset>
+                <br /><input type="submit" value="submit form" />
+                    
+    </form>
+</body>
+</html>

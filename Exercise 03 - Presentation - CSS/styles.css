@@ -1,0 +1,44 @@
+/* -- step 2 -- */
+* {
+    font-family: verdana;
+    font-size: 14pt;
+}
+
+h1 {
+    font-size: 22pt;
+    color: #0022ff;
+}
+
+h3 {
+    font-size: 18pt;
+    color: navy;
+}
+
+/* -- step 3 -- */
+blockquote {
+    font-family: Garamond;
+    font-size: 20pt;
+}
+
+/* -- step 4 -- */
+thead tr  {background-color:navy;color:white; font-weight:bold; font-size:16pt;}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {background-color:#ddddff;}
+
+/* -- step 5 -- */
+body {
+    background-color: aliceblue;
+}
+
+/* -- step 6 -- */
+#profilepic {
+float:right;}
+
+hr { width:50%;
+}
+a:hover {
+color:blue;}
